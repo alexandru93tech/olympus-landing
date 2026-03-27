@@ -50,7 +50,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mb-8" />
 
         {/* Footer links */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 text-sm text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 text-sm text-left max-w-4xl mx-auto">
           <div>
             <h4 className="text-white/60 font-bold mb-3 uppercase text-xs tracking-wider">
               Regulile Manhattan
