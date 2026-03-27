@@ -161,12 +161,14 @@ export default function Footer() {
 
           {/* Partner logos placeholder */}
           <div className="flex justify-center items-center gap-6 mb-6 flex-wrap">
-            {["18+", "ONJN", "IBIA"].map((label) => (
+            {[1, 2, 3, 4, 5, 6].map((i) => (
               <div
-                key={label}
-                className="w-12 h-12 rounded-full bg-gray-800 border border-gray-700 flex items-center justify-center text-[10px] text-gray-500 font-bold"
+                key={i}
+                className="w-16 h-16 rounded-lg bg-gray-800 border border-gray-700 flex items-center justify-center text-[10px] text-gray-500 font-bold"
               >
-                {label}
+                <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
               </div>
             ))}
           </div>
@@ -174,32 +176,27 @@ export default function Footer() {
 
         {/* Legal text */}
         <div className="text-center mb-8">
-          <p className="text-[10px] text-gray-600 leading-relaxed max-w-5xl mx-auto">
-            Website-ul este operat și administrat de V Venture Limited, o
-            companie înființată și operând în conformitate cu legile din Malta,
-            având număr de înregistrare în Registrul Companiilor din Malta
-            C71935, cu sediul social oficial la adresa ST. Julians STJ 4010,
-            Luxe Pavilion, 2nd Level, Diamonds International Building,
-            Portomaso, Malta.
+          <p className="text-[10px] text-gray-600 leading-relaxed mx-auto text-center">
+            Website-ul manhattan.ro este operat și administrat de V Venture Limited, societate înființată și operând în conformitate cu legile din Malta, având număr de înregistrare în Registrul Companiilor din Malta C71939, cu sediul social situat la adresa St. Julians STJ 4010, Luxe Pavillion, 2nd Level, Diamonds International Building, Portomaso, Malta, prin V Venture Limited St. Julians Sucursala București, înregistrată în Registrul Comerțului sub nr. de ordine J40/21658/2023, având cod de identificare fiscală 49123359, cu sediul în România, București, Sector 2, Str. Mântuleasa nr. 15, Corp B, Birou 5, Etajul 1, având calitatea de organizator de jocuri de noroc la distanță (pariuri în cotă fixă la distanță și cazinou la distanță) în baza Licenței de organizare nr. L1244251W001596 eliberată de către Oficiul Național pentru Jocuri de Noroc prin Decizia nr. 1190/21.08.2024 valabilă începând cu data de 01.09.2024 până la data de 31.08.2034 și în baza autorizației de exploatare nr. A241244251W595477 emise de către Oficiul Național pentru Jocuri de Noroc prin Decizia nr. 728/28.08.2025 valabilă începând cu data de 01.09.2025 până la data de 31.08.2026.
           </p>
         </div>
 
         {/* Payment methods */}
-        <div className="border-t border-white/5 pt-6">
-          <p className="text-center text-[10px] text-gray-600 mb-4 uppercase tracking-wider">
+        <div className="pt-6">
+          <p className="text-center text-[10px] text-gray-600 mb-4 tracking-wider">
             Plăți
           </p>
           <div className="flex justify-center items-center gap-4 sm:gap-6 flex-wrap mb-6">
-            {["Mastercard", "VISA", "Apple Pay", "G Pay", "Revolut"].map(
-              (method) => (
-                <span
-                  key={method}
-                  className="text-xs text-gray-500 font-semibold"
-                >
-                  {method}
-                </span>
-              )
-            )}
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div
+                key={i}
+                className="w-16 h-10 rounded-md bg-gray-800 border border-gray-700 flex items-center justify-center"
+              >
+                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+              </div>
+            ))}
           </div>
         </div>
 
